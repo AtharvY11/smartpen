@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Pen Store</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo-wrap">
+    <img src="logo.png" alt="LogiPen Logo" class="logo-img">
+  </a>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="product.html">Product</a>
+    <a href="cart.html">Cart</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="nav-cta">Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-grid-lines"></div>
+  <div class="hero-content">
+    <div class="hero-badge">New 2025 Edition</div>
+    <h1>Write Smarter.<br><em>Learn Faster.</em></h1>
+    <p>The Smart Study Pen digitizes your notes instantly, enhances recall, and syncs with every device — the future of learning, in your hand.</p>
+    <div class="hero-actions">
+      <a href="product.html" class="btn-primary">Buy Now</a>
+      <a href="#" class="btn-ghost">Watch Demo ▶</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">50K+</div>
+        <div class="stat-label">Students Using It</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">4.9★</div>
+        <div class="stat-label">Average Rating</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">₹1999</div>
+        <div class="stat-label">Launch Price</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="pen-showcase">
+      <div class="pen-glow"></div>
+      <div class="pen-ring"></div>
+      <div class="pen-card-3d">
+        <svg class="pen-svg" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="14" width="120" height="12" rx="6" fill="url(#penGrad)"/>
+          <path d="M130 14 L150 20 L130 26 Z" fill="#6ee7f7" opacity="0.9"/>
+          <rect x="15" y="11" width="5" height="16" rx="2.5" fill="rgba(110,231,247,0.5)"/>
+          <circle cx="105" cy="20" r="2" fill="rgba(255,255,255,0.3)"/>
+          <circle cx="115" cy="20" r="2" fill="rgba(255,255,255,0.3)"/>
+          <circle cx="125" cy="20" r="2" fill="rgba(255,255,255,0.3)"/>
+          <circle cx="25" cy="20" r="3" fill="#6ee7f7" opacity="0.9"/>
+          <defs>
+            <linearGradient id="penGrad" x1="10" y1="14" x2="130" y2="26" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#1e293b"/>
+              <stop offset="100%" stop-color="#334155"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="pen-name">Smart Study Pen</div>
+        <div class="pen-price-tag">₹1,999 only</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="section-tag">Why Choose Us</div>
+  <div class="section-title">Everything you need to study smarter</div>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">✦</div>
+      <div class="feature-title">Instant Digitization</div>
+      <div class="feature-desc">Converts handwritten notes to digital text in real time, syncing automatically to your phone or laptop.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">◈</div>
+      <div class="feature-title">AI-Powered Summaries</div>
+      <div class="feature-desc">Built-in AI reviews your notes and generates concise summaries to accelerate revision before exams.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">⬡</div>
+      <div class="feature-title">30-Hour Battery</div>
+      <div class="feature-desc">Long-lasting charge keeps you writing through full study sessions without needing a recharge.</div>
+    </div>
+  </div>
+</section>
+
+<section class="product-section">
+  <div class="section-tag">Featured Product</div>
+  <div class="section-title">Meet the Smart Study Pen</div>
+  <div class="product-featured">
+    <div class="product-img-wrap">
+      <img src="pen.png" alt="Smart Study Pen" class="product-img">
+    </div>
+    <div class="product-info">
+      <div class="product-badge">⭐ Best Seller 2025</div>
+      <div class="product-name">Smart Study Pen<br>Pro Edition</div>
+      <div class="product-desc">Engineered for serious students. Combines precision writing with cutting-edge technology to transform how you learn and retain information.</div>
+      <div class="product-price-row">
+        <div class="price-main">₹1,999</div>
+        <div class="price-label">Free delivery</div>
+      </div>
+      <div class="product-features">
+        <div class="pf-chip">Wireless Sync</div>
+        <div class="pf-chip">AI Notes</div>
+        <div class="pf-chip">30hr Battery</div>
+        <div class="pf-chip">Waterproof</div>
+        <div class="pf-chip">1 Year Warranty</div>
+      </div>
+      <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-left">
+    <img src="logo.png" alt="LogiPen" class="footer-logo">
+  </div>
+  <div class="footer-copy">© 2025 LogiPen — Smart Notes & Studies. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

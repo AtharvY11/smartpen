@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart - LogiPen</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo-wrap">
+    <img src="logo.png" alt="LogiPen Logo" class="logo-img">
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="product.html">Product</a>
+    <a href="cart.html" class="active">Cart</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="nav-cta">Login</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="section-tag">Shopping Cart</div>
+    <h1 class="page-title">Your <em>Cart</em></h1>
+    <p class="page-subtitle">Review your items before checkout.</p>
+  </div>
+</section>
+
+<section class="cart-section">
+  <div class="cart-grid">
+    <div class="cart-items-col">
+      <div class="cart-item-card">
+        <div class="cart-item-img">
+          <img src="pen.png" alt="Smart Study Pen">
+        </div>
+        <div class="cart-item-info">
+          <div class="cart-item-name">Smart Study Pen — Pro Edition</div>
+          <div class="cart-item-meta">Wireless Sync · AI Notes · 30hr Battery</div>
+          <div class="cart-item-price">₹1,999</div>
+        </div>
+        <div class="cart-item-qty">
+          <button class="qty-btn" onclick="changeQty(-1)">−</button>
+          <span class="qty-val" id="qty">1</span>
+          <button class="qty-btn" onclick="changeQty(1)">+</button>
+        </div>
+        <div class="cart-item-total" id="item-total">₹1,999</div>
+        <button class="remove-btn" onclick="removeItem(this)">✕</button>
+      </div>
+    </div>
+    <div class="cart-summary-col">
+      <div class="summary-card">
+        <h3 class="summary-title">Order Summary</h3>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="subtotal">₹1,999</span>
+        </div>
+        <div class="summary-row">
+          <span>Delivery</span>
+          <span class="free-tag">Free</span>
+        </div>
+        <div class="summary-row">
+          <span>Discount</span>
+          <span class="discount-tag">−₹1,000</span>
+        </div>
+        <div class="summary-divider"></div>
+        <div class="summary-row summary-total-row">
+          <span>Total</span>
+          <span id="total">₹1,999</span>
+        </div>
+        <div class="promo-row">
+          <input type="text" class="promo-input" placeholder="Promo code">
+          <button class="promo-btn">Apply</button>
+        </div>
+        <button class="add-to-cart-btn" onclick="checkout(this)">Proceed to Checkout</button>
+        <div class="trust-row" style="margin-top:16px;">
+          <div class="trust-item">🔒 Secure</div>
+          <div class="trust-item">🚚 Free Delivery</div>
+          <div class="trust-item">↩ Returns</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-left">
+    <img src="logo.png" alt="LogiPen" class="footer-logo">
+  </div>
+  <div class="footer-copy">© 2025 LogiPen — Smart Notes & Studies. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

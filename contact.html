@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - LogiPen</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo-wrap">
+    <img src="logo.png" alt="LogiPen Logo" class="logo-img">
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="product.html">Product</a>
+    <a href="cart.html">Cart</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="login.html" class="nav-cta">Login</a>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="section-tag">Get In Touch</div>
+    <h1 class="page-title">We'd love to <em>hear</em> from you</h1>
+    <p class="page-subtitle">Have a question? We're here to help.</p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="contact-grid">
+    <div class="contact-info-col">
+      <h2 class="contact-heading">Customer Support</h2>
+      <p class="contact-subtext">Our team is available Monday–Saturday, 9am to 6pm IST.</p>
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="contact-card-icon">✉</div>
+          <div>
+            <div class="contact-card-label">Email Us</div>
+            <div class="contact-card-value">support@logipen.com</div>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon">✆</div>
+          <div>
+            <div class="contact-card-label">Call Us</div>
+            <div class="contact-card-value">+91 9876543210</div>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card-icon">◷</div>
+          <div>
+            <div class="contact-card-label">Working Hours</div>
+            <div class="contact-card-value">Mon–Sat, 9am – 6pm IST</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form-col">
+      <div class="form-card">
+        <h3 class="form-title">Send us a message</h3>
+        <div class="form-group">
+          <label class="form-label">Your Name</label>
+          <input type="text" class="form-input" placeholder="e.g. Rahul Sharma">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-input" placeholder="you@example.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Subject</label>
+          <input type="text" class="form-input" placeholder="How can we help?">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-input form-textarea" placeholder="Write your message here..."></textarea>
+        </div>
+        <button class="add-to-cart-btn" onclick="sendMessage(this)">Send Message</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-left">
+    <img src="logo.png" alt="LogiPen" class="footer-logo">
+  </div>
+  <div class="footer-copy">© 2025 LogiPen — Smart Notes & Studies. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

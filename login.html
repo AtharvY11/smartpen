@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - LogiPen</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo-wrap">
+    <img src="logo.png" alt="LogiPen Logo" class="logo-img">
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="product.html">Product</a>
+    <a href="cart.html">Cart</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="active nav-cta">Login</a>
+  </nav>
+</header>
+
+<section class="auth-section">
+  <div class="auth-left">
+    <a href="index.html" class="auth-logo-wrap">
+      <img src="logo.png" alt="LogiPen" class="auth-logo">
+    </a>
+    <h2 class="auth-tagline">The Future of<br><em>Learning</em> is Here.</h2>
+    <p class="auth-desc">Join 50,000+ students who study smarter with the Smart Study Pen.</p>
+    <div class="auth-stats">
+      <div class="auth-stat">
+        <div class="auth-stat-num">50K+</div>
+        <div class="auth-stat-label">Students</div>
+      </div>
+      <div class="auth-stat">
+        <div class="auth-stat-num">4.9★</div>
+        <div class="auth-stat-label">Rating</div>
+      </div>
+      <div class="auth-stat">
+        <div class="auth-stat-num">30hr</div>
+        <div class="auth-stat-label">Battery</div>
+      </div>
+    </div>
+  </div>
+  <div class="auth-right">
+    <div class="auth-card">
+      <div class="auth-card-header">
+        <h3 class="auth-title">Welcome back</h3>
+        <p class="auth-subtitle">Sign in to your account</p>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Username or Email</label>
+        <input type="text" class="form-input" placeholder="you@example.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-input" placeholder="Enter your password">
+      </div>
+      <div class="auth-options">
+        <label class="remember-me">
+          <input type="checkbox" id="remember">
+          <span>Remember me</span>
+        </label>
+        <a href="#" class="forgot-link">Forgot password?</a>
+      </div>
+      <button class="add-to-cart-btn" onclick="handleLogin(this)">Sign In</button>
+      <div class="auth-divider"><span>or</span></div>
+      <p class="auth-switch">Don't have an account? <a href="signup.html" class="auth-link">Create one →</a></p>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

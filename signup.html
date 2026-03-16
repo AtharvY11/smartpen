@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up - LogiPen</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo-wrap">
+    <img src="logo.png" alt="LogiPen Logo" class="logo-img">
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="product.html">Product</a>
+    <a href="cart.html">Cart</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html" class="nav-cta">Login</a>
+  </nav>
+</header>
+
+<section class="auth-section">
+  <div class="auth-left">
+    <a href="index.html" class="auth-logo-wrap">
+      <img src="logo.png" alt="LogiPen" class="auth-logo">
+    </a>
+    <h2 class="auth-tagline">Start Your<br><em>Smarter</em> Journey.</h2>
+    <p class="auth-desc">Create a free account and get access to exclusive student deals and features.</p>
+    <div class="auth-perks">
+      <div class="auth-perk"><span class="perk-dot"></span> Free delivery on first order</div>
+      <div class="auth-perk"><span class="perk-dot"></span> Exclusive student discounts</div>
+      <div class="auth-perk"><span class="perk-dot"></span> Track your orders easily</div>
+      <div class="auth-perk"><span class="perk-dot"></span> 1-year warranty included</div>
+    </div>
+  </div>
+  <div class="auth-right">
+    <div class="auth-card">
+      <div class="auth-card-header">
+        <h3 class="auth-title">Create account</h3>
+        <p class="auth-subtitle">It's free and takes 30 seconds</p>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Full Name</label>
+        <input type="text" class="form-input" placeholder="e.g. Rahul Sharma">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-input" placeholder="you@example.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-input" placeholder="Min. 8 characters">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Confirm Password</label>
+        <input type="password" class="form-input" placeholder="Repeat your password">
+      </div>
+      <div class="auth-agree">
+        <input type="checkbox" id="agree">
+        <label for="agree">I agree to the <a href="#" class="auth-link">Terms</a> and <a href="#" class="auth-link">Privacy Policy</a></label>
+      </div>
+      <button class="add-to-cart-btn" onclick="handleSignup(this)">Create Account</button>
+      <div class="auth-divider"><span>or</span></div>
+      <p class="auth-switch">Already have an account? <a href="login.html" class="auth-link">Sign in →</a></p>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
